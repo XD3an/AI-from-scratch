@@ -1,6 +1,6 @@
 import torch
-import json
 import logging
+import json
 import os
 
 from model import Model
@@ -29,6 +29,13 @@ class FinetuneConfig:
     CONTEXT_LENGTH = config['finetune']['context_length']
     SEED = config['finetune']['seed']
     DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
+
+def format_data(example):
+    prompt = f"### Instruction:\n{example['instruction']}"
+    if example['input']:
+        prompt += f"### Input:\n{example['input']}"
+    prompt += f"### Output:\n{example['output']}"
+    return prompt
 
 @torch.no_grad()
 def estimate_loss(model, train_data, val_data, batch_size, num_batches, context_length, device):
@@ -91,7 +98,7 @@ def finetune(model, train_data, val_data, batch_size, context_length, learning_r
             losses = estimate_loss(model, train_data, val_data, batch_size, num_batches, context_length, device)
             logger.info(f"[Iteration {iter: 6d}] train loss: {losses['train_loss']:.4f}, val loss: {losses['val_loss']:.4f}")
 
-        x_batch, y_batch = get_batch(train_data, batch_size, context_length, device)
+        x_batch, y_batch = get_batch(train_data, context_length, batch_size, device)
         logits, loss = model(x_batch, y_batch)
 
         optimizer.zero_grad()
@@ -104,22 +111,16 @@ def finetune(model, train_data, val_data, batch_size, context_length, learning_r
 def main():
     # Load data (alpaca format)
     finetune_datasets = load_data_with_huggingface(FinetuneConfig.DATASET_PATH)
-    # Convert datasets to JSON format
-    train_json = json.dumps([
-        {
-            "instruction": item["instruction"],
-            "input": item["input"],
-            "output": item["output"]
-        }
-        for item in finetune_datasets["train"]
-    ], ensure_ascii=False)
-    # with open('./data/finetune-alpaca.json', 'w', encoding="utf-8") as f:
-    #     f.write(train_json)
+    raw_train_daat = finetune_datasets["train"]
+    formatted_train_data = [format_data(item) for item in raw_train_daat]
 
-    # preprocess data
-    train_datasets = train_json
-    #print(train_datasets)
-    train_data, val_data = prepare_data(train_datasets)
+    # preprocess
+    train_data, val_data = prepare_data(formatted_train_data)
+    train_data = str(train_data)
+    val_data = str(val_data)
+
+    #print(train_data)
+    #input()
 
     # Tokenize data
     tokenizer = TextTokenizer(encoding_name="cl100k_base")
