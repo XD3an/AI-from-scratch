@@ -9,7 +9,7 @@
 
 ### HuggingFace-Transformers
 
-- [gpt2-inference]
+- [gpt2-inference](HuggingFace-Transformers/)
 
 ### Finetune
 
