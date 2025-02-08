@@ -1,0 +1,5 @@
+matplotlib==3.6.2
+tensorflow==2.15.0
+tensorflow_intel==2.15.0
+torch==2.6.0
+torchvision==0.21.0
