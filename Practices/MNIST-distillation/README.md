@@ -22,12 +22,15 @@
   ```
 
 2. Run the practice
-  1. 訓練教師模型
+ 
+    訓練教師模型
 
     ```
     python mnist-teacher-pt.py 
     ```
-  2. 蒸餾技術至學生模型 (含蒸餾與無蒸餾比較)
+
+    蒸餾技術至學生模型 (含蒸餾與無蒸餾比較)
+    
     ```
     python mnist-student-pt.py
     ```
