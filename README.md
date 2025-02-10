@@ -67,7 +67,7 @@
   - [Practice MNIST-distillation/](Practices/MNIST-distillation/)
 
 - [CIFAR-10](): CIFAR-10 是一個包含 60,000 張 32x32 像素的彩色圖像的數據集，分為 10 個類別。
-  - [Practice CIFAR-10](Practices/CIFAR-10/)
+  - [Practice CIFAR-10/](Practices/CIFAR-10/)
 
 - ...
 
