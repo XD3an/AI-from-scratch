@@ -1,0 +1,4 @@
+matplotlib==3.6.2
+torch==2.6.0
+torchinfo==1.8.0
+torchvision==0.21.0
