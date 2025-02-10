@@ -21,8 +21,6 @@ class InferenceConfig:
     TEMPERATURE = config['inference']['temperature']
     TOP_K = config['inference']['top_k']
 
-
-
 class Inferencer:
 
     def __init__(self, model_path, device=None):
