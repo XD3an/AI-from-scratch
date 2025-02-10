@@ -4,8 +4,6 @@
 
 ## Usage
 
-### Environment
-
 1. build the virtual environment
 
   ```
