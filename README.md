@@ -63,6 +63,9 @@
 - [MNIST](): MNIST 是一個手寫數字圖像數據集，包含 0 到 9 的 70,000 張 28x28 像素的灰度圖像。
   - [Practice MNIST/](Practices/MNIST/)
 
+- [MNIST-distillation](): MNIST-distillation 是一個基於知識蒸餾的實驗，用於將大模型（教師模型）的知識轉移到小模型（學生模型）。
+  - [Practice MNIST-distillation/](Practices/MNIST-distillation/)
+
 - [CIFAR-10](): CIFAR-10 是一個包含 60,000 張 32x32 像素的彩色圖像的數據集，分為 10 個類別。
   - [Practice CIFAR-10](Practices/CIFAR-10)
 
