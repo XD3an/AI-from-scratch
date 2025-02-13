@@ -71,6 +71,10 @@
 
 - ...
 
+## Application
+
+- [dify-web-summarizer](Application/dify-web-summarizer): 一個簡易的Web 摘要瀏覽器插件應用實現，使用 Dify 來輔助建立的 AI 小工具。
+
 ## More News
 
 - [OpenAI News](https://openai.com/news/)

@@ -1,0 +1,397 @@
+app:
+  description: ''
+  icon: 🌐
+  icon_background: '#EFF1F5'
+  mode: workflow
+  name: Summarize website with Jina Reader
+  use_icon_as_answer_icon: false
+kind: app
+version: 0.1.5
+workflow:
+  conversation_variables: []
+  environment_variables: []
+  features:
+    file_upload:
+      allowed_file_extensions:
+      - .JPG
+      - .JPEG
+      - .PNG
+      - .GIF
+      - .WEBP
+      - .SVG
+      allowed_file_types:
+      - image
+      allowed_file_upload_methods:
+      - local_file
+      - remote_url
+      enabled: false
+      fileUploadConfig:
+        audio_file_size_limit: 50
+        batch_count_limit: 5
+        file_size_limit: 15
+        image_file_size_limit: 10
+        video_file_size_limit: 100
+        workflow_file_upload_limit: 10
+      image:
+        enabled: false
+        number_limits: 3
+        transfer_methods:
+        - local_file
+        - remote_url
+      number_limits: 3
+    opening_statement: ''
+    retriever_resource:
+      enabled: false
+    sensitive_word_avoidance:
+      enabled: false
+    speech_to_text:
+      enabled: false
+    suggested_questions: []
+    suggested_questions_after_answer:
+      enabled: false
+    text_to_speech:
+      enabled: false
+      language: ''
+      voice: ''
+  graph:
+    edges:
+    - data:
+        isInIteration: false
+        sourceType: llm
+        targetType: end
+      id: 1721658600475-source-1721658633440-target
+      source: '1721658600475'
+      sourceHandle: source
+      target: '1721658633440'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: start
+        targetType: tool
+      id: 1721658395085-source-1721904218664-target
+      source: '1721658395085'
+      sourceHandle: source
+      target: '1721904218664'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: tool
+        targetType: llm
+      id: 1721904218664-source-1721658600475-target
+      source: '1721904218664'
+      sourceHandle: source
+      target: '1721658600475'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    nodes:
+    - data:
+        desc: ''
+        selected: false
+        title: Start
+        type: start
+        variables:
+        - label: input_url
+          max_length: 200
+          options: []
+          required: true
+          type: paragraph
+          variable: input_url
+      height: 89
+      id: '1721658395085'
+      position:
+        x: 80
+        y: 282
+      positionAbsolute:
+        x: 80
+        y: 282
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 243
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: gpt-4o-mini-2024-07-18
+          provider: openai
+        prompt_template:
+        - id: fe55b1c4-98aa-4659-aa91-5fb10659ea42
+          role: system
+          text: '<instructions>
+
+            1. Read the provided information carefully to understand the context and
+            content.
+
+            2. Identify the main discussion topics covered in the information.
+
+            3. Extract the key takeaways from the information, focusing on the most
+            important points.
+
+            4. Summarize the information concisely, ensuring that the summary is clear
+            and easy to understand.
+
+            5. Ensure that the output does not contain any XML tags.
+
+            </instructions>
+
+
+            <examples>
+
+            <example>
+
+            <information>
+
+            The meeting covered several important topics, including the upcoming product
+            launch, marketing strategies, and budget allocation. The team discussed
+            the timeline for the product launch, emphasizing the need for thorough
+            testing before the release. Marketing strategies were also a key focus,
+            with discussions on social media campaigns and influencer partnerships.
+            Budget allocation was another critical topic, with the team deciding to
+            allocate more funds to digital marketing efforts.
+
+            </information>
+
+            <summary>
+
+            Discussion Topics:
+
+            1. Upcoming product launch
+
+            2. Marketing strategies
+
+            3. Budget allocation
+
+
+            Key Takeaways:
+
+            1. Emphasis on thorough testing before the product launch.
+
+            2. Focus on social media campaigns and influencer partnerships for marketing.
+
+            3. Increased budget allocation for digital marketing efforts.
+
+            </summary>
+
+            </example>
+
+
+            <example>
+
+            <information>
+
+            The workshop on sustainable practices highlighted several key areas, including
+            waste reduction, energy efficiency, and sustainable sourcing. Participants
+            discussed various strategies for reducing waste, such as recycling programs
+            and composting. Energy efficiency was another major topic, with suggestions
+            for using energy-efficient appliances and renewable energy sources. Sustainable
+            sourcing was also emphasized, with a focus on sourcing materials from
+            environmentally friendly suppliers.
+
+            </information>
+
+            <summary>
+
+            Discussion Topics:
+
+            1. Waste reduction
+
+            2. Energy efficiency
+
+            3. Sustainable sourcing
+
+
+            Key Takeaways:
+
+            1. Implementation of recycling programs and composting to reduce waste.
+
+            2. Use of energy-efficient appliances and renewable energy sources.
+
+            3. Sourcing materials from environmentally friendly suppliers.
+
+            </summary>
+
+            </example>
+
+
+            <example>
+
+            <information>
+
+            The conference on digital transformation covered a wide range of topics,
+            including the adoption of new technologies, data security, and employee
+            training. Speakers discussed the importance of adopting new technologies
+            to stay competitive, with a focus on cloud computing and artificial intelligence.
+            Data security was another critical topic, with recommendations for implementing
+            robust security measures to protect sensitive information. Employee training
+            was also highlighted, with an emphasis on upskilling employees to handle
+            new technologies.
+
+            </information>
+
+            <summary>
+
+            Discussion Topics:
+
+            1. Adoption of new technologies
+
+            2. Data security
+
+            3. Employee training
+
+            '
+        - id: 5f8dd023-116f-4643-bcf3-1eb012c9976a
+          role: user
+          text: '{{#1721904218664.text#}}'
+        selected: false
+        title: LLM
+        type: llm
+        variables: []
+        vision:
+          configs:
+            detail: high
+            variable_selector:
+            - sys
+            - files
+          enabled: false
+      height: 97
+      id: '1721658600475'
+      position:
+        x: 793.3160730704922
+        y: 282
+      positionAbsolute:
+        x: 793.3160730704922
+        y: 282
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 243
+    - data:
+        desc: ''
+        outputs:
+        - value_selector:
+          - '1721658600475'
+          - text
+          variable: text
+        selected: false
+        title: End
+        type: end
+      height: 89
+      id: '1721658633440'
+      position:
+        x: 1166.2379743703143
+        y: 282
+      positionAbsolute:
+        x: 1166.2379743703143
+        y: 282
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 243
+    - data:
+        desc: ''
+        provider_id: jina
+        provider_name: jina
+        provider_type: builtin
+        selected: true
+        title: JinaReader
+        tool_configurations:
+          gather_all_images_at_the_end: 0
+          gather_all_links_at_the_end: 0
+          image_caption: 0
+          no_cache: 0
+          proxy_server: null
+          summary: 0
+          target_selector: null
+          wait_for_selector: null
+        tool_label: JinaReader
+        tool_name: jina_reader
+        tool_parameters:
+          request_params:
+            type: mixed
+            value: ''
+          url:
+            type: mixed
+            value: '{{#1721658395085.input_url#}}'
+        type: tool
+      height: 271
+      id: '1721904218664'
+      position:
+        x: 473.52345440889883
+        y: 282
+      positionAbsolute:
+        x: 473.52345440889883
+        y: 282
+      selected: true
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 243
+    - data:
+        author: Dify
+        desc: ''
+        height: 88
+        selected: false
+        showAuthor: true
+        text: '{"root":{"children":[{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"Configure
+          your Jina Reader API Key at jina.ai","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0}],"direction":"ltr","format":"","indent":0,"type":"root","version":1}}'
+        theme: blue
+        title: ''
+        type: ''
+        width: 320
+      height: 88
+      id: '1722241409723'
+      position:
+        x: 432.86374281096704
+        y: 165.4587322050709
+      positionAbsolute:
+        x: 432.86374281096704
+        y: 165.4587322050709
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom-note
+      width: 320
+    - data:
+        author: Dify
+        desc: ''
+        height: 120
+        selected: false
+        showAuthor: true
+        text: '{"root":{"children":[{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"This
+          workflow will ","type":"text","version":1},{"detail":0,"format":1,"mode":"normal","style":"","text":"summarize
+          the website url provided ","type":"text","version":1},{"detail":0,"format":0,"mode":"normal","style":"","text":"using
+          a Large Language Model node. ","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0}],"direction":"ltr","format":"","indent":0,"type":"root","version":1}}'
+        theme: blue
+        title: ''
+        type: ''
+        width: 282
+      height: 120
+      id: '1722241423655'
+      position:
+        x: 68
+        y: 430.45873220507093
+      positionAbsolute:
+        x: 68
+        y: 430.45873220507093
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom-note
+      width: 282
+    viewport:
+      x: 78.81984959180181
+      y: -55.69712192190127
+      zoom: 0.9999999999999999

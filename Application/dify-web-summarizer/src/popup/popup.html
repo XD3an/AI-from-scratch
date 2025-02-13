@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dify-web-summarizer</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h1>dify-web-summarizer</h1>
+
+  <label for="url">Current URL:</label>
+  <input type="url" id="url" placeholder="URL will be filled automatically">
+
+  <div id="status" class="status"></div>
+
+  <button id="summarize-btn" class="button">Summarize</button>
+
+  <div id="summary" class="summary"></div>
+  
+  <a href="../settings/options.html" id="options-link" class="button-link">Set API Key</a>
+
+  <script src="popup.js"></script>
+</body>
+</html>
