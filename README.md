@@ -51,7 +51,7 @@
 ### Inference and Deployment
 
 - [HuggingFace-Transformers](https://huggingface.co/docs/transformers/en/index): HuggingFace-transformers 是一個用於自然語言處理的庫，提供了許多預訓練的語言模型，包括 BERT、GPT-2、RoBERTa 等。HuggingFace-transformers 提供了一個簡單而強大的 API，可以用於構建和訓練自然語言處理模型，並且支持多種不同的任務，包括文本分類、命名實體識別、問答等。
-  - [gpt2-inference/](./AI Framework and Ecosystem/HuggingFace-Transformers/)
+  - [gpt2-inference/](/AI%20Framework%20and%20Ecosystem/HuggingFace-Transformers/)
 
 - [vLLM](https://docs.vllm.ai/en/latest/index.html): vLLM 是一個開源的高效能推理框架，專門針對大規模語言模型（LLMs）在 GPU 上的推理進行優化。其目的是提高大模型推理的速度和效率，特別是在處理大規模神經網路模型時。
 
