@@ -22,7 +22,9 @@
 
 - [ ] Generative adversarial networks (GAN)
 
-- [Transformer-Decoder-only](Transformer-decoder-only/README.md)
+- Transformer
+
+  - [Transformer-Decoder-only](Transformer-decoder-only/README.md)
 
 ## AI Framework and Ecosystem
 
@@ -57,6 +59,20 @@
 
 - [FastAPI + Transformers]()
   - [FastAPI](https://fastapi.tiangolo.com/tutorial/): FastAPI 是一個現代的 Web 框架，用於構建高性能的 API。FastAPI 提供了一個簡單而強大的 API。
+
+### Tools and Repositories
+
+- [awesome-ai](https://github.com/openbestof/awesome-ai): 收集各種 AI 相關的資源和工具。
+
+- [ai-collection](https://github.com/ai-collection/ai-collection): 一個 AI 工具和專案的集合。
+
+- [dify](https://github.com/langgenius/dify): 一個支持 LLM 應用開發的開源框架。
+
+- [crawl4ai](https://github.com/unclecode/crawl4ai): 用於爬取 AI 相關數據的工具。
+
+- [browser-use](https://github.com/browser-use/browser-use): 一個用於使 AI 代理可以訪問網頁的工具。
+
+- [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers): Model Context Protocol (MCP) servers awesome list.
 
 ## Practices
 
