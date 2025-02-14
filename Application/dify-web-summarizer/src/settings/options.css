@@ -17,7 +17,7 @@ label {
   margin-bottom: 8px;
 }
 
-input[type="text"], input[type="url"] {
+input[type="text"], input[type="password"], input[type="url"] {
   width: 100%;
   padding: 5px;
   margin-bottom: 10px;
