@@ -97,6 +97,7 @@
 - [Meta AI Blog](https://ai.meta.com/blog/)
 - [Google AI Latest News](https://ai.google/latest-news/)
 - [Hugging Face Blog](https://huggingface.co/blog)
+- [The Rundown AI](https://www.therundown.ai/)
 - [Sebastian Raschka's AI Magazine](https://magazine.sebastianraschka.com/?utm_source=homepage_recommendations&utm_campaign=1741130)
 - [Maarten Grootendorst's Newsletter](https://newsletter.maartengrootendorst.com/)
 - [Language Models Newsletter](https://newsletter.languagemodels.co/?utm_source=homepage_recommendations&utm_campaign=1741130)
