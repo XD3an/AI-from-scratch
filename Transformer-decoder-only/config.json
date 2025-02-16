@@ -33,10 +33,10 @@
         "iterations": 100000,
         "learning_rate": 5e-5,
         "eval_interval": 1000,
-        "context_length": 64,
+        "context_length": 16,
         "seed": 1337
     },
     "huggingface-token": {
-        "access_token": "Your Huggingface Access Token"
+        "access_token": "YOUR_HUGGINGFACE_TOKEN HERE"
     }
 }

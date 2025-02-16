@@ -14,12 +14,23 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-with open('config.json', 'r') as f:
-    config = json.load(f)
+# Hyperparameters
 class InferenceConfig:
-    MAX_TOKENS = config['inference']['max_tokens']
-    TEMPERATURE = config['inference']['temperature']
-    TOP_K = config['inference']['top_k']
+    """Configuration for Inference"""
+    def __init__(self, config_path: str = 'config.json'):
+        """
+        Load configuration from JSON file
+        
+        Args:
+            config_path (str): Path to the configuration JSON file
+        """
+        with open(config_path, 'r') as f:
+            config = json.load(f)
+        
+        self.MAX_TOKENS = config['inference']['max_tokens']
+        self.TEMPERATURE = config['inference']['temperature']
+        self.TOP_K = config['inference']['top_k']
+InferenceConfig = InferenceConfig()
 
 class Inferencer:
 

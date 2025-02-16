@@ -8,9 +8,9 @@ import json
 
 from model import Model
 
+# Load configuration
 with open("config.json", "r") as f:
     config = json.load(f)
-
 login(config['huggingface-token']['access_token']) if config['huggingface-token']['access_token'] != "YOUR_HUGGING_FACE_ACCESS_TOKEN" else None
 
 def load_data_with_huggingface(path: str):

@@ -15,20 +15,25 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-with open('config.json', 'r') as f:
-    config = json.load(f)
-
+# Hyperparameters
 class FinetuneConfig:
-    DATASET_PATH = config['finetune']['dataset_path']
-    MODEL_PATH = config['finetune']['model_path']
-    TARGET_MODEL_PATH = config['finetune']['target_model_path']
-    BATCH_SIZE = config['finetune']['batch_size']
-    ITERATIONS = config['finetune']['iterations']
-    LEARNING_RATE = config['finetune']['learning_rate']
-    EVAL_INTERVAL = config['finetune']['eval_interval']
-    CONTEXT_LENGTH = config['finetune']['context_length']
-    SEED = config['finetune']['seed']
-    DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
+    """Configuration for finetuning the model"""
+    
+    def __init__(self):
+        with open('config.json', 'r') as f:
+            config = json.load(f)
+            
+        self.DATASET_PATH = config['finetune']['dataset_path']
+        self.MODEL_PATH = config['finetune']['model_path']
+        self.TARGET_MODEL_PATH = config['finetune']['target_model_path']
+        self.BATCH_SIZE = config['finetune']['batch_size']
+        self.ITERATIONS = config['finetune']['iterations']
+        self.LEARNING_RATE = config['finetune']['learning_rate']
+        self.EVAL_INTERVAL = config['finetune']['eval_interval']
+        self.CONTEXT_LENGTH = config['finetune']['context_length']
+        self.SEED = config['finetune']['seed']
+        self.DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
+FinetuneConfig = FinetuneConfig()
 
 def format_data(example):
     prompt = f"### Instruction:\n{example['instruction']}"
@@ -110,9 +115,13 @@ def finetune(model, train_data, val_data, batch_size, context_length, learning_r
             
 def main():
     # Load data (alpaca format)
-    finetune_datasets = load_data_with_huggingface(FinetuneConfig.DATASET_PATH)
-    raw_train_daat = finetune_datasets["train"]
-    formatted_train_data = [format_data(item) for item in raw_train_daat]
+    try:
+        finetune_datasets = load_data_with_huggingface(FinetuneConfig.DATASET_PATH)
+        raw_train_daat = finetune_datasets["train"]
+        formatted_train_data = [format_data(item) for item in raw_train_daat]
+    except:
+        logger.error("Failed to load training data")
+        return
 
     # preprocess
     train_data, val_data = prepare_data(formatted_train_data)

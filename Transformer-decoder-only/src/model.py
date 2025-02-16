@@ -7,18 +7,27 @@ import json
 
 
 # Huperparameters
-with open('config.json', 'r') as f:
-    config = json.load(f)
 class ModelConfig:
     """Configuration for the model"""
-    CONTEXT_LENGTH: int = config['model']['context_length']     # Number of context frames (default: 16)
-    D_MODEL: int = config['model']['d_model']                   # Dimension of the model (must be divisible by NUM_HEADS)
-    D_FF: int = config['model']['d_ff']                         # Dimension of the feed forward network (must be equal to D_MODEL*4)
-    NUM_BLOCKS: int = config['model']['num_blocks']             # Number of transformer blocks in the model (default: 8)
-    NUM_HEADS: int = config['model']['num_heads']               # Number of heads in multi-head attention (must divide D_MODEL)
-    DROP_OUT: float = config['model']['dropout']                # Drop out rate for regularization (default: 0.1)
-    DEVICE: str = 'cuda' if torch.cuda.is_available() else 'cpu'
-
+    
+    def __init__(self, config_path: str = 'config.json'):
+        """
+        Load configuration from JSON file
+        
+        Args:
+            config_path (str): Path to the configuration JSON file
+        """
+        with open(config_path, 'r') as f:
+            config = json.load(f)
+    
+        self.CONTEXT_LENGTH: int = config['model']['context_length']     # Number of context frames (default: 16)
+        self.D_MODEL: int = config['model']['d_model']                   # Dimension of the model (must be divisible by NUM_HEADS)
+        self.D_FF: int = config['model']['d_ff']                         # Dimension of the feed forward network (must be equal to D_MODEL*4)
+        self.NUM_BLOCKS: int = config['model']['num_blocks']             # Number of transformer blocks in the model (default: 8)
+        self.NUM_HEADS: int = config['model']['num_heads']               # Number of heads in multi-head attention (must divide D_MODEL)
+        self.DROP_OUT: float = config['model']['dropout']                # Drop out rate for regularization (default: 0.1)
+        self.DEVICE: str = 'cuda' if torch.cuda.is_available() else 'cpu'
+ModelConfig = ModelConfig()
 
 class FeedForwardNetwork(nn.Module):
     def __init__(self):

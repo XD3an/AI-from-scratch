@@ -129,22 +129,34 @@ def main():
         config = TrainingConfig()
         
         # 1. Load and prepare data (parquet format)
-        raw_data = load_data_with_huggingface(path=config.DATASET_PATH)
-        
-        textbook = []
-        for i in range(0, len(raw_data['train'])):
-            textbook.append(raw_data['train'][i]['text'])
-        textbook = ' '.join(textbook)
-        
-        if raw_data is None:
+        textbook = load_data_with_huggingface(path=config.DATASET_PATH)
+        if textbook is None:
             logger.error("Failed to load training data")
             return
-        logger.info(f"Data loaded: {len(textbook)} tokens")
+        
+        try:
+            train_textbook = []
+            test_textbook = []
+            for i in range(0, len(textbook['train'])):
+                train_textbook.append(textbook['train'][i]['text'])
+            train_textbook = ' '.join(train_textbook)
+            
+            for i in range(0, len(textbook['test'])):
+                test_textbook.append(textbook['test'][i]['text'])
+            test_textbook = ' '.join(test_textbook)
+        except:
+            pass
+        
+        if len(train_textbook) < config.CONTEXT_LENGTH or len(test_textbook) < config.CONTEXT_LENGTH:
+            logger.error(f"Data length ({len(train_textbook)}/{len(test_textbook)}) is smaller than context length ({config.CONTEXT_LENGTH})")
+            train_textbook, test_textbook = prepare_data(train_textbook)
+        logger.info(f"Data loaded: {len(train_textbook)} training samples, {len(test_textbook)} test samples")
         
         # 2. Tokenize data
         tokenizer = TextTokenizer(encoding_name="cl100k_base")
-        tokenized_data = tokenizer.encode(textbook)  # Tokenize the data
-        train_data, val_data = prepare_data(tokenized_data)   # Split data into train and validation (80/20)
+        train_data = tokenizer.encode(train_textbook)
+        val_data = tokenizer.encode(test_textbook)
+        # train_data, val_data = prepare_data(tokenized_data)   # Split data into train and validation (80/20)
         logger.info(f"Data split: Train {len(train_data)} tokens, Validation {len(val_data)} tokens")
         
         # 3. Initialize model
@@ -160,7 +172,16 @@ def main():
         logger.info("Optimizer initialized")
         
         # 5. Training loop
-        train_model(model, optimizer, train_data, val_data, config.BATCH_SIZE, config.ITERATIONS, config.EVAL_INTERVAL, config.CONTEXT_LENGTH, config.DEVICE, config.SEED)
+        train_model(model, 
+                    optimizer, 
+                    train_data, 
+                    val_data, 
+                    config.BATCH_SIZE, 
+                    config.ITERATIONS, 
+                    config.EVAL_INTERVAL, 
+                    config.CONTEXT_LENGTH, 
+                    config.DEVICE, 
+                    config.SEED)
         logger.info("Training completed")
         
         # 6. Save the model

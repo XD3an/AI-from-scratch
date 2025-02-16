@@ -2,11 +2,8 @@ import tiktoken
 import json
 
 
-with open("config.json", "r") as f:
-    config = json.load(f)
-
 class TextTokenizer:
-    def __init__(self, encoding_name=config['tokenizer']['encoding_name']):
+    def __init__(self, encoding_name):
         """
         Initialize tokenizer with optional encoding selection
         
@@ -14,7 +11,9 @@ class TextTokenizer:
             encoding_name (str): Tiktoken encoding name
         """
         try:
-            self.tokenizer = tiktoken.get_encoding(encoding_name)
+            with open("config.json", "r") as f:
+                config = json.load(f)
+            self.tokenizer = tiktoken.get_encoding(config['tokenizer']['encoding_name'])
         except Exception as e:
             print(f"Error initializing tokenizer: {e}")
             raise
