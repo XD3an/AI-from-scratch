@@ -85,7 +85,14 @@
 - [CIFAR-10](): CIFAR-10 是一個包含 60,000 張 32x32 像素的彩色圖像的數據集，分為 10 個類別。
   - [Practice CIFAR-10/](Practices/CIFAR-10/)
 
+- [CIFAR-10](): CIFAR-10 是一個包含 60,000 張 32x32 像素的彩色圖像的數據集，分為 10 個類別。
+  - [Practice CIFAR-10/](Practices/CIFAR-10/)
+
 - [Transformer-Decoder-only](Transformer-decoder-only/): 是一個基於 Transformer 的解碼器模型，用於生成文本（字）序列。
+
+## Application
+
+- [dify-web-summarizer](Application/dify-web-summarizer): 一個簡易的Web 摘要瀏覽器插件應用實現，使用 Dify 來輔助建立的 AI 小工具。
 
 ## Application
 
