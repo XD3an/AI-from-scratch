@@ -162,7 +162,7 @@
 
   - [Monica](https://monica.im/)
 
-  - [NotebooLlm](https://notebooklm.google.com/)
+  - [NotebookLm](https://notebooklm.google.com/)
 
   - [沉浸式翻譯](https://immersivetranslate.com/)
 
