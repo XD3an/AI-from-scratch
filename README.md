@@ -154,7 +154,7 @@
 
 - AI Coding
 
-  -[Cursor](https://www.cursor.com/)
+  - [Cursor](https://www.cursor.com/)
 
   - [Windsurf](https://codeium.com/windsurf)
 
