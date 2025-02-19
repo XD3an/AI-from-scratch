@@ -60,20 +60,6 @@
 - [FastAPI + Transformers]()
   - [FastAPI](https://fastapi.tiangolo.com/tutorial/): FastAPI 是一個現代的 Web 框架，用於構建高性能的 API。FastAPI 提供了一個簡單而強大的 API。
 
-### Tools and Repositories
-
-- [awesome-ai](https://github.com/openbestof/awesome-ai): 收集各種 AI 相關的資源和工具。
-
-- [ai-collection](https://github.com/ai-collection/ai-collection): 一個 AI 工具和專案的集合。
-
-- [dify](https://github.com/langgenius/dify): 一個支持 LLM 應用開發的開源框架。
-
-- [crawl4ai](https://github.com/unclecode/crawl4ai): 用於爬取 AI 相關數據的工具。
-
-- [browser-use](https://github.com/browser-use/browser-use): 一個用於使 AI 代理可以訪問網頁的工具。
-
-- [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers): Model Context Protocol (MCP) servers awesome list.
-
 ## Practices
 
 - [MNIST](): MNIST 是一個手寫數字圖像數據集，包含 0 到 9 的 70,000 張 28x28 像素的灰度圖像。
@@ -93,6 +79,94 @@
 ## Application
 
 - [dify-web-summarizer](Application/dify-web-summarizer): 一個簡易的Web 摘要瀏覽器插件應用實現，使用 Dify 來輔助建立的 AI 小工具。
+
+### Tools and Repositories
+
+#### Collections
+
+- [awesome-ai](https://github.com/openbestof/awesome-ai): 收集各種 AI 相關的資源和工具。
+
+- [ai-collection](https://github.com/ai-collection/ai-collection): 一個 AI 工具和專案的集合。
+
+- [dify](https://github.com/langgenius/dify): 一個支持 LLM 應用開發的開源框架。
+
+- [crawl4ai](https://github.com/unclecode/crawl4ai): 用於爬取 AI 相關數據的工具。
+
+- [browser-use](https://github.com/browser-use/browser-use): 一個用於使 AI 代理可以訪問網頁的工具。
+
+- [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers): Model Context Protocol (MCP) servers awesome list.
+
+- [Awesome-AI-Agents](https://github.com/Jenqyang/Awesome-AI-Agents): 收集各種 AI-Agents 相關資訊。
+
+#### AI Tools
+
+- 基礎大語言模型
+  
+  - [ChatGPT](https://chat.openai.com/)
+  
+  - [Claude](https://claude.ai/)
+
+  - [Gemini](https://gemini.google.com/app)
+
+  - [xAI](https://x.ai/)
+
+  - [Meta Llama Llama](https://www.llama.com/)
+
+  - [DeepSeek](https://www.deepseek.com/)
+
+- AI 搜尋
+
+  - [Perplexity AI](https://www.perplexity.ai/)
+
+- AI 畫圖
+
+  - [midjourney](https://www.midjourney.com/)
+
+  - [Stability AI](https://stability.ai/) 
+
+  - [Flux AI](https://flux1.ai/)
+
+  - [whisk](http://labs.google/whisk) 
+
+  - [Recraft](https://www.recraft.ai/)
+
+- AI 影片
+
+  - [Sora](https://openai.com/sora/)
+
+  - [Runway](https://runwayml.com/research/gen-2)
+
+  - [Pika](https://pika.art/)
+
+- AI 語音
+
+  - [ElevenLabs](https://elevenlabs.io/)
+
+  - [ChatTTS](https://chattts.com/)
+
+- AI 音樂
+
+  - [Suno](https://suno.com/)
+
+- AI PPT
+
+  - [Gamma](https://gamma.app/)
+
+- AI Coding
+
+  -[Cursor](https://www.cursor.com/)
+
+  - [Windsurf](https://codeium.com/windsurf)
+
+- 其他實用工具
+
+  - [Monica](https://monica.im/)
+
+  - [NotebooLlm](https://notebooklm.google.com/)
+
+  - [沉浸式翻譯](https://immersivetranslate.com/)
+
+  - [HeyGen](https://www.heygen.com/)
 
 ## More News
 
