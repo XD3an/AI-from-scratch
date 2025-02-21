@@ -1,0 +1,42 @@
+{
+    "model":{
+        "context_length": 16,
+        "d_model": 64,
+        "d_ff": 256,
+        "num_blocks": 8,
+        "num_heads": 4,
+        "dropout": 0.1
+    },
+    "tokenizer":{
+        "encoding_name": "cl100k_base"
+    },
+    "train":{
+        "batch_size": 4,
+        "iterations": 20000,
+        "learning_rate": 1e-3,
+        "eval_interval": 50,
+        "context_length": 16,
+        "dataset_path": "goendalf666/sales-textbook_for_convincing_and_selling",
+        "model_path": "./model/model.pth",
+        "seed": 1337
+    },
+    "inference":{
+        "max_tokens": 500,
+        "temperature": 0.7,
+        "top_k": 50
+    },
+    "finetune":{
+        "dataset_path": "yahma/alpaca-cleaned",
+        "model_path": "./model/model.pth",
+        "target_model_path": "./model/finetuned_model.pth",
+        "batch_size": 2,
+        "iterations": 100000,
+        "learning_rate": 5e-5,
+        "eval_interval": 1000,
+        "context_length": 16,
+        "seed": 1337
+    },
+    "huggingface-token": {
+        "access_token": "YOUR_HUGGINGFACE_TOKEN HERE"
+    }
+}
