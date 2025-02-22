@@ -24,7 +24,7 @@
 
 - Transformer
 
-  - [Transformer-Decoder-only](Transformer-decoder-only/README.md)
+  - [Transformer-Decoder-only](Practice/Transformer-decoder-only/README.md)
 
 ## AI Framework and Ecosystem
 
@@ -52,13 +52,44 @@
 
 ### Inference and Deployment
 
-- [HuggingFace-Transformers](https://huggingface.co/docs/transformers/en/index): HuggingFace-transformers 是一個用於自然語言處理的庫，提供了許多預訓練的語言模型，包括 BERT、GPT-2、RoBERTa 等。HuggingFace-transformers 提供了一個簡單而強大的 API，可以用於構建和訓練自然語言處理模型，並且支持多種不同的任務，包括文本分類、命名實體識別、問答等。
-  - [gpt2-inference/](/AI%20Framework%20and%20Ecosystem/HuggingFace-Transformers/)
+#### Inference
+
+- [WebLLM](https://webllm.mlc.ai/): 是一個用於在瀏覽器中運行大型語言模型（LLMs）的推理引擎工具，可以用於生成文本、回答問題等。
+
+- [LMStudio](https://lmstudio.ai/): 是一個功能齊全的本地部屬 LLM 運行環境框架，支援本地設備上離線執行大型語言模型。
+
+- [Ollama](https://ollama.com/): 是一個開源的 LLM 服務框架，用於本地部署，且提供完整的模型管理與推理服務，適用於對資料安全性要求較高的應用環境。
 
 - [vLLM](https://docs.vllm.ai/en/latest/index.html): vLLM 是一個開源的高效能推理框架，專門針對大規模語言模型（LLMs）在 GPU 上的推理進行優化。其目的是提高大模型推理的速度和效率，特別是在處理大規模神經網路模型時。
 
-- [FastAPI + Transformers]()
-  - [FastAPI](https://fastapi.tiangolo.com/tutorial/): FastAPI 是一個現代的 Web 框架，用於構建高性能的 API。FastAPI 提供了一個簡單而強大的 API。
+- [LightLLM](https://github.com/ModelTC/lightllm): 是一個基於 Python 的輕量級大型語言模型 (LLM) 推理和服務框架。它設計上註重高效能與低資源消耗，適用於在資源受限的環境中（如行動裝置或邊緣運算）快速部署 LLM。
+
+- [OpenLLM](https://github.com/bentoml/OpenLLM): 允許開發人員使用單一命令運行任何開源 LLM（Llama 3.3、Qwen2.5、Phi3 等）或自訂模型作為與 OpenAI 相容的 API。
+
+- [HuggingFace TGI](https://huggingface.co/docs/text-generation-inference/en/index): 是一個用於部署和服務大型語言模型（LLM）的工具包。
+    - [HuggingFace-Transformers/gpt2-inference/](https://www.notion.so/AI%20Framework%20and%20Ecosystem/HuggingFace-Transformers/)
+
+- [GPT4ALL](https://www.nomic.ai/gpt4all): 是一個旨在讓大型語言模型（LLM）在本地設備上運行的開源平台。
+
+- [llama.cpp](https://github.com/ggml-org/llama.cpp): 是一個開源的 C/C++ 函式庫，旨在在各種硬體上有效率地進行大型語言模型（LLM）的推理。
+
+- [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM): 是 NVIDIA 開源的 TensorRT 工具箱，專門用於優化大型語言模型（LLM）的推理效能。它提供 Python API 和 C++ 元件，允許使用者有效地在 NVIDIA GPU 上建置和執行 TensorRT 推理引擎。
+
+#### Interactions
+
+##### Prompt
+
+- [Prompting Guide](https://www.promptingguide.ai/)
+
+- [Promptify](https://app.promptify.com/)
+
+- [AIDungeon](https://aidungeon.com/)
+
+- [Promptbase](https://promptbase.com/)
+
+## Agents
+
+- [MCP protocol]()
 
 ## Practices
 
@@ -74,11 +105,31 @@
 - [CIFAR-10](): CIFAR-10 是一個包含 60,000 張 32x32 像素的彩色圖像的數據集，分為 10 個類別。
   - [Practice CIFAR-10/](Practices/CIFAR-10/)
 
-- [Transformer-Decoder-only](Transformer-decoder-only/): 是一個基於 Transformer 的解碼器模型，用於生成文本（字）序列。
+- [Transformer-Decoder-only](Practice/Transformer-decoder-only/): 是一個基於 Transformer 的解碼器模型，用於生成文本（字）序列。
+
+- [RAG]: RAG 是一種基於檢索式生成模型的技術，可以透過檢索知識庫中的文本來生成回應。
+  - [Practice RAG](Practices/RAG-demo/README.md): RAG 模型 demo (中文，基於 BGE 模型，醫療領域)。
+
+- [Multi-Modal from scratch]
+  - [SigLP]
+
+- [Large Language Model from scratch]
+  - [SFT]
+  - [DPO]
+
+- [MoE]
+
+- [LLM Knowledge Distillation]
+
+- [DeepSeek-R1 from scratch]
 
 ## Application
 
 - [dify-web-summarizer](Application/dify-web-summarizer): 一個簡易的Web 摘要瀏覽器插件應用實現，使用 Dify 來輔助建立的 AI 小工具。
+
+- [mcp-servers]
+
+- [Medical AI applications]
 
 ### Tools and Repositories
 
@@ -97,6 +148,10 @@
 - [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers): Model Context Protocol (MCP) servers awesome list.
 
 - [Awesome-AI-Agents](https://github.com/Jenqyang/Awesome-AI-Agents): 收集各種 AI-Agents 相關資訊。
+
+- [Awesome-LLM-Inference](https://github.com/DefTruth/Awesome-LLM-Inference)
+
+- [Awesome-LLM-resources](https://github.com/WangRongsheng/awesome-LLM-resourses)
 
 #### AI Tools
 
