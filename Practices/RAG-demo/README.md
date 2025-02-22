@@ -1,23 +1,23 @@
 # RAG demo
 
-RAG 模型 demo(中文，基於 BGE 模型，醫療領域)。
+RAG 模型 demo (中文，基於 BGE 模型，醫療領域)。
 
 ## Usage
 
 1. build the virtual environment
 
-  ```
-  python -m venv .venv
+    ```
+    python -m venv .venv
 
-  # activate
-  .venv/Scripts/activate     # Windows
-  source .venv/bin/activate  # macOS and Linux
+    # activate
+    .venv/Scripts/activate     # Windows
+    source .venv/bin/activate  # macOS and Linux
     
-  # install required packages
+    # install required packages
 
-  pip install -r requirements.txt
+    pip install -r requirements.txt
 
-  ```
+    ```
 
 2. Run the demo
 
