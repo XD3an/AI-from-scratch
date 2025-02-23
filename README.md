@@ -231,7 +231,9 @@
 
 ## Application
 
-- [dify-web-summarizer](Application/dify-web-summarizer)：一個簡易的Web 摘要瀏覽器插件應用實現，使用 Dify 來輔助建立的 AI 小工具。
+- [dify-web-summarizer](Application/dify-web-summarizer/README.md)：一個簡易的Web 摘要瀏覽器插件應用實現，使用 Dify 來輔助建立的 AI 小工具。
+
+- [browser-use-application](Application/browser-use-application/README.md)：基於 [browser-use](https://github.com/browser-use) 的測試應用。
 
 - [MCP server applications]()
   - control browser?
