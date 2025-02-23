@@ -221,7 +221,7 @@
 
 - [Transformer-Decoder-only](Practice/Transformer-decoder-only/)：是一個基於 Transformer 的解碼器模型，用於生成文本（字）序列。
 
-- [RAG]：RAG 是一種基於檢索式生成模型的技術，可以透過檢索知識庫中的文本來生成回應。
+- [RAG]()：RAG 是一種基於檢索式生成模型的技術，可以透過檢索知識庫中的文本來生成回應。
   - [Practice RAG](Practices/RAG-demo/README.md)：RAG 模型 demo (中文，基於 BGE 模型，醫療領域)。
 
 - [ ] [Multi-Modal from scratch]()
