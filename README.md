@@ -94,6 +94,14 @@
   - [MCP servers githuModel Context Protocol servers](https://github.com/modelcontextprotocol/servers)
   - [PulseMCP](https://www.pulsemcp.com/)
   - [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers)
+  - MCP
+    - [Filesystem MCP Server](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem)
+    - [Fetch MCP Server](https://github.com/modelcontextprotocol/servers/tree/main/src/fetch)
+    - [Github MCP Server](https://github.com/modelcontextprotocol/servers/tree/main/src/github)
+    - [mcp-installer](https://github.com/anaisbetts/mcp-installer)
+    - [Claude Desktop Commander MCP](https://github.com/wonderwhy-er/ClaudeComputerCommander)
+    - [mcp-ollama](https://github.com/emgeee/mcp-ollama)
+    - ...
 
 - [Github Copilot](https://github.com/features/copilot)：GitHub Copilot 是一個基於 OpenAI Codex 的 AI 程式碼助手，可以幫助開發人員快速生成程式碼。
 
