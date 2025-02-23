@@ -236,6 +236,7 @@
 - [browser-use-application](Application/browser-use-application/README.md)：基於 [browser-use](https://github.com/browser-use) 的測試應用。
 
 - [MCP server applications]()
+  - [simple-calculator-mcp](Application/simple-calculator-mcp/README.md)：一個簡單的計算機 MCP 應用。
   - control browser?
   - voice assistant?
 
