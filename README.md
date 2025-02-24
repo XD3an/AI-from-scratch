@@ -1,30 +1,50 @@
 # AI from scratch
 
-## Machine Learning Fundamental
+## Tranditional Machine Learning Fundamental
 
 - **Regression methods**
 
+  - Linear Regression（線性迴歸）：預測連續值的最基本方法，尋找數據之間的線性關係。
+  - Polynomial Regression（多項式迴歸）：當數據關係非線性時使用，透過添加次方項來擬合曲線。
+  - Ridge/Lasso Regression（嶺迴歸/套索迴歸）：處理多重共線性問題的正則化線性迴歸方法，透過懲罰項來減少過擬合。
+  - Support Vector Regression (SVR)（支持向量迴歸）：利用支持向量找到最大容忍誤差的函數，可處理非線性關係。
+  - Decision Tree Regression（決策樹迴歸）：基於樹狀結構進行預測，將數據分割成不同區域。
+  - Random Forest Regression（隨機森林迴歸）：結合多個決策樹的集成學習方法，提高穩定性和準確性。
+
 - **Classifications & Clustering methods**
+
+  - Logistic Regression（邏輯迴歸）：用於二分類問題的統計方法，預測事件發生的概率。
+  - Support Vector Machines (SVM)（支持向量機）：在特徵空間中找尋最佳分隔超平面來分類數據。
+  - Decision Trees（決策樹）：樹狀結構模型，根據特徵值進行分支決策。
+  - Random Forests（隨機森林）：多個決策樹的集成，減少過擬合風險。
+  - Naive Bayes（樸素貝葉斯）：基於貝葉斯定理的分類器，假設特徵之間相互獨立。
+  - K-Nearest Neighbors (KNN)（K近鄰）：基於相似性的分類方法，根據最近的K個鄰居進行分類。
+  - K-Means Clustering（K均值聚類）：將數據分成K個不同的群組，最小化群內點到中心的距離和。
+  - Hierarchical Clustering（層次聚類）：創建數據點的嵌套聚類，可以是自下而上或自上而下的方法。
+  - DBSCAN（基於密度的聚類方法）：基於密度的聚類演算法，能發現任意形狀的聚類，對噪聲數據處理良好。
+  - Gradient Boosting Machines (GBM)（梯度提升機）：一種集成方法，通過構建弱學習器序列來提高性能。
+  - XGBoost, LightGBM, CatBoost：梯度提升的高效實現，針對不同場景優化的算法。
 
 - **Dimensionality Reduction methods**
 
+  - Principal Component Analysis (PCA)（主成分分析）：通過找出最大方差方向將高維數據投影到低維空間。
+  - t-Distributed Stochastic Neighbor Embedding (t-SNE)（t分布隨機鄰域嵌入）：非線性降維技術，特別適合可視化高維數據。
+  - Linear Discriminant Analysis (LDA)（線性判別分析）：監督式降維技術，尋找能最佳區分不同類別的投影方向。
+  - Singular Value Decomposition (SVD)（奇異值分解）：矩陣分解技術，用於壓縮和降噪。
+  - Non-negative Matrix Factorization (NMF)（非負矩陣分解）：將矩陣分解為非負因子，適用於特徵提取。
+  - Uniform Manifold Approximation and Projection (UMAP)（均勻流形近似與投影）：現代非線性降維技術，保留全局和局部結構。
+  - Autoencoders（自編碼器）：神經網路架構，通過學習數據的壓縮表示實現降維。
+
 ## Deep Learning Fundamental
 
-- [ ] Multilayer perceptron (MLP)
-
-- [ ] Convolution Neural Network (CNN)
-
-- [ ] Recurrent Neural Network (RNN)
-
-- [ ] Long short-term memory (LSTM)
-
-- [ ] Variational autoencoder (VAE)
-
-- [ ] Generative adversarial networks (GAN)
-
-- Transformer
-
-  - [Transformer-Decoder-only](Practice/Transformer-decoder-only/README.md)
+  - Multilayer Perceptron (MLP)（多層感知器）：最基本的前饋神經網路，由輸入層、一個或多個隱藏層和輸出層組成。每個神經元與下一層的所有神經元相連，用於分類和回歸任務。
+  - Convolutional Neural Network (CNN)（卷積神經網路）：專為處理網格狀數據（如圖像）設計的神經網路。使用卷積操作自動提取特徵，通過卷積層、池化層和全連接層構成，在計算機視覺領域表現優異。
+  - Recurrent Neural Network (RNN)（循環神經網路）：設計用於處理序列數據的神經網路。網絡中的神經元可以記住之前的訊息，適合處理時間序列、文本等序列數據。
+  - Long Short-Term Memory (LSTM)（長短期記憶網路）：RNN的一種變體，解決了普通RNN的長期依賴問題。通過引入門控機制（輸入門、遺忘門、輸出門）來控制訊息流，有效處理長序列數據。
+  - Variational Autoencoder (VAE)（變分自編碼器）：生成模型的一種，結合了自編碼器和機率模型。透過學習數據的隱變量表示，可以生成新的數據樣本，廣泛應用於圖像生成和特徵學習。
+  - Generative Adversarial Networks (GAN)（生成對抗網路）：由生成器和判別器組成的對抗性架構。生成器嘗試創建逼真的數據，判別器嘗試區分真實和生成的數據，二者相互競爭提升。應用於圖像生成、風格轉換等領域。
+  - Transformer：一種基於自注意力機制的神經網路架構，最初為自然語言處理設計。不依賴循環結構，通過注意力機制直接建模長距離依賴關係，展現出卓越的並行處理能力。是現代大語言模型（如GPT、BERT）的基礎架構。
+    - [Transformer-Decoder-only](Practice/Transformer-decoder-only/README.md)
 
 ## AI Framework and Ecosystem
 
@@ -103,7 +123,7 @@
     - [mcp-ollama](https://github.com/emgeee/mcp-ollama)
     - ...
 
-- [Github Copilot](https://github.com/features/copilot)：GitHub Copilot 是一個基於 OpenAI Codex 的 AI 程式碼助手，可以幫助開發人員快速生成程式碼。
+- [Github Copilot](https://github.com/features/copilot)：GitHub Copilot 是一個 AI 程式碼助手，可以幫助開發人員快速生成程式碼。
 
 - [Cline](https://www.cline.ai/)：Cline 提供了一個靈活且可擴展的框架，支持多種 AI 模型和 MCP 功能，幫助開發者快速構建和部署智慧代理系統。
   - [Roo-Code](https://github.com/RooVetGit/Roo-Code)
@@ -113,9 +133,7 @@
 
 - [browser-use](https://github.com/browser-use/browser-use)：一個用於使 AI 代理可以訪問網頁的工具。
 
-- [crawl4ai](https://github.com/unclecode/crawl4ai)：用於爬取 AI 相關數據的工具。
-
-- [agent-toolkit](https://github.com/stripe/agent-toolkit)：一個用於構建和訓練 AI 代理的工具包。
+- [crawl4ai](https://github.com/unclecode/crawl4ai)：用於幫助 AI 爬取相關網站的工具。
 
 ### Tools and Repositories
 
