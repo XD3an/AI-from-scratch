@@ -53,8 +53,11 @@
     pip install -r requirements.txt
     ```
 
-2. run the app
+2. add api-key in your config file
+
+3. run the app
 
     ```
-    python browser-use-cmd.py --api-key "YOUR_GOOGLE_API_KEY_HERE" --model "model_name" --task "This is your task."
+    usage: browser-use-cmd.py [-h] --task TASK [--llm {google,openai,anthropic}] [--model MODEL] [--override-api-key API_KEY]
+    # e.g. .\browser-use-cmd.py  --task "Search News by google and stop" --llm "google" --model "gemini-2.0-flash-001" 
     ```
