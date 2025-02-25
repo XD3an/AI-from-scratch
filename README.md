@@ -127,6 +127,7 @@
     - [mcp-installer](https://github.com/anaisbetts/mcp-installer)
     - [Claude Desktop Commander MCP](https://github.com/wonderwhy-er/ClaudeComputerCommander)
     - [mcp-ollama](https://github.com/emgeee/mcp-ollama)
+    - [mcp=server-browser-use](https://github.com/XD3an/mcp-browser-use)
     - ...
 
 - [Github Copilot](https://github.com/features/copilot)：GitHub Copilot 是一個 AI 程式碼助手，可以幫助開發人員快速生成程式碼。
