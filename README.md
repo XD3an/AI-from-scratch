@@ -117,9 +117,11 @@
 
 - [Model Context Protocol (MCP)](https://modelcontextprotocol.io/introduction)：MCP 是一個用於定義和交換模型上下文的協議，用於描述模型的環境、任務和目標，以及模型的訓練和推理過程。
   - [Introducing the Model Context Protocol](https://www.anthropic.com/news/model-context-protocol)
-  - [MCP servers githuModel Context Protocol servers](https://github.com/modelcontextprotocol/servers)
+  - [MCP servers github Model Context Protocol servers](https://github.com/modelcontextprotocol/servers)
   - [PulseMCP](https://www.pulsemcp.com/)
   - [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers)
+  - [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers/)
+  - [punkpeye/awesome-mcp-clients](https://github.com/punkpeye/awesome-mcp-clients)
   - MCP
     - [Filesystem MCP Server](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem)
     - [Fetch MCP Server](https://github.com/modelcontextprotocol/servers/tree/main/src/fetch)
