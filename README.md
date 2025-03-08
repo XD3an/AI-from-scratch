@@ -210,6 +210,16 @@
 - AI Coding
 
   - [Cursor](https://www.cursor.com/)
+    - 核心功能：
+      - Rules
+      - Composer
+      - Chat
+      - Edit: Inline & Terminal & Tabs
+      - MCP
+      - Agents
+      - ...
+    - 參考資料：
+      - [cursor.directory](https://cursor.directory/)
 
   - [Windsurf](https://codeium.com/windsurf)
 
