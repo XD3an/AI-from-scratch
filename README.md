@@ -117,9 +117,8 @@
 
 - [Model Context Protocol (MCP)](https://modelcontextprotocol.io/introduction)：MCP 是一個用於定義和交換模型上下文的協議，用於描述模型的環境、任務和目標，以及模型的訓練和推理過程。
   - [Introducing the Model Context Protocol](https://www.anthropic.com/news/model-context-protocol)
-  - [MCP servers githuModel Context Protocol servers](https://github.com/modelcontextprotocol/servers)
-  - [PulseMCP](https://www.pulsemcp.com/)
   - [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers)
+  - [PulseMCP](https://www.pulsemcp.com/)
   - MCP
     - [Filesystem MCP Server](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem)
     - [Fetch MCP Server](https://github.com/modelcontextprotocol/servers/tree/main/src/fetch)
@@ -128,6 +127,8 @@
     - [Claude Desktop Commander MCP](https://github.com/wonderwhy-er/ClaudeComputerCommander)
     - [mcp-ollama](https://github.com/emgeee/mcp-ollama)
     - ...
+
+  - More: [XD3an/model-context-protocol-templates](https://github.com/XD3an/model-context-protocol-templates)
 
 - [Github Copilot](https://github.com/features/copilot)：GitHub Copilot 是一個 AI 程式碼助手，可以幫助開發人員快速生成程式碼。
 
@@ -140,6 +141,13 @@
 - [browser-use](https://github.com/browser-use/browser-use)：一個用於使 AI 代理可以訪問網頁的工具。
 
 - [crawl4ai](https://github.com/unclecode/crawl4ai)：用於幫助 AI 爬取相關網站的工具。
+
+- [huggingface microsoft/OmniParser-v2.0 · Hugging Face](https://huggingface.co/microsoft/OmniParser-v2.0?fbclid=IwY2xjawIe5rVleHRuA2FlbQIxMQABHVOSUSGV78Bt5i6EoNQ-WEDWtFBpQYlz7nDE4BQlWJHYCpKFt-Fl9KWZVQ_aem_Um2hOeKCFYrCZZr35fedxw
+)
+
+- [awesome-computer-use](https://github.com/ranpox/awesome-computer-use)
+
+- [OpenManus](https://github.com/mannaandpoem/OpenManus)
 
 ### Tools and Repositories
 
