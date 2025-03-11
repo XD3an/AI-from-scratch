@@ -149,7 +149,11 @@
 
 - [awesome-computer-use](https://github.com/ranpox/awesome-computer-use)
 
+- [xlang-ai/OSWorld](https://github.com/xlang-ai/OSWorld)
+
 - [OpenManus](https://github.com/mannaandpoem/OpenManus)
+
+- [geekan/MetaGPT](https://github.com/geekan/MetaGPT)
 
 ### Tools and Repositories
 
