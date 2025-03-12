@@ -157,6 +157,8 @@
 
 - [AutoGen](https://github.com/microsoft/autogen)
 
+- [openai-agents-python](https://github.com/openai/openai-agents-python)
+
 ### Tools and Repositories
 
 #### AI Tools
