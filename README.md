@@ -155,6 +155,8 @@
 
 - [geekan/MetaGPT](https://github.com/geekan/MetaGPT)
 
+- [AutoGen](https://github.com/microsoft/autogen)
+
 ### Tools and Repositories
 
 #### AI Tools
