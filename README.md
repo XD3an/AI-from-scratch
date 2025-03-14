@@ -159,6 +159,8 @@
 
 - [openai-agents-python](https://github.com/openai/openai-agents-python)
 
+- [octotools](https://github.com/octotools/octotools)
+
 ### Tools and Repositories
 
 #### AI Tools
