@@ -157,6 +157,8 @@
 
 - [AutoGen](https://github.com/microsoft/autogen)
 
+- [LangGraph](https://github.com/langchain-ai/langgraph)
+
 - [openai-agents-python](https://github.com/openai/openai-agents-python)
 
 - [octotools](https://github.com/octotools/octotools)
