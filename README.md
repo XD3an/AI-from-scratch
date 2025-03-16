@@ -163,6 +163,8 @@
 
 - [octotools](https://github.com/octotools/octotools)
 
+- [AutoAgent](https://github.com/HKUDS/AutoAgent)
+
 ### Tools and Repositories
 
 #### AI Tools
