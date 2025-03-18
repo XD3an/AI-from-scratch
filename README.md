@@ -1,6 +1,8 @@
 # AI from scratch
 
-## Tranditional Machine Learning Fundamental
+## AI Fundamental
+
+### Tranditional Machine Learning Fundamental
 
 <details>
 <summary>Regression methods</summary>
@@ -44,17 +46,43 @@
 
 </details>
 
-<details>
-<summary>Deep Learning Fundamental</summary>
+### Deep Learning Fundamental
 
-- **Multilayer Perceptron (MLP)（多層感知器）**：最基本的前饋神經網路，由輸入層、一個或多個隱藏層和輸出層組成。每個神經元與下一層的所有神經元相連，用於分類和回歸任務。
-- **Convolutional Neural Network (CNN)（卷積神經網路）**：專為處理網格狀數據（如圖像）設計的神經網路。使用卷積操作自動提取特徵，通過卷積層、池化層和全連接層構成，在計算機視覺領域表現優異。
-- **Recurrent Neural Network (RNN)（循環神經網路）**：設計用於處理序列數據的神經網路。網絡中的神經元可以記住之前的訊息，適合處理時間序列、文本等序列數據。
-- **Long Short-Term Memory (LSTM)（長短期記憶網路）**：RNN的一種變體，解決了普通RNN的長期依賴問題。通過引入門控機制（輸入門、遺忘門、輸出門）來控制訊息流，有效處理長序列數據。
-- **Variational Autoencoder (VAE)（變分自編碼器）**：生成模型的一種，結合了自編碼器和機率模型。透過學習數據的隱變量表示，可以生成新的數據樣本，廣泛應用於圖像生成和特徵學習。
-- **Generative Adversarial Networks (GAN)（生成對抗網路）**：由生成器和判別器組成的對抗性架構。生成器嘗試創建逼真的數據，判別器嘗試區分真實和生成的數據，二者相互競爭提升。應用於圖像生成、風格轉換等領域。
-- **Transformer**：一種基於自注意力機制的神經網路架構，最初為自然語言處理設計。不依賴循環結構，通過注意力機制直接建模長距離依賴關係，展現出卓越的並行處理能力。是現代大語言模型（如GPT、BERT）的基礎架構。
+<details>
+<summary>Multilayer Perceptron (MLP)（多層感知器）</summary>
+最基本的前饋神經網路，由輸入層、一個或多個隱藏層和輸出層組成。每個神經元與下一層的所有神經元相連，用於分類和回歸任務。
+</details>
+
+<details>
+<summary>Convolutional Neural Network (CNN)（卷積神經網路）</summary>
+專為處理網格狀數據（如圖像）設計的神經網路。使用卷積操作自動提取特徵，通過卷積層、池化層和全連接層構成，在計算機視覺領域表現優異。
+</details>
+
+<details>
+<summary>Recurrent Neural Network (RNN)（循環神經網路）</summary>
+設計用於處理序列數據的神經網路。網絡中的神經元可以記住之前的訊息，適合處理時間序列、文本等序列數據。
+</details>
+
+<details>
+<summary>Long Short-Term Memory (LSTM)（長短期記憶網路）</summary>
+RNN的一種變體，解決了普通RNN的長期依賴問題。通過引入門控機制（輸入門、遺忘門、輸出門）來控制訊息流，有效處理長序列數據。
+</details>
+
+<details>
+<summary>Variational Autoencoder (VAE)（變分自編碼器）</summary>
+生成模型的一種，結合了自編碼器和機率模型。透過學習數據的隱變量表示，可以生成新的數據樣本，廣泛應用於圖像生成和特徵學習。
+</details>
+
+<details>
+<summary>Generative Adversarial Networks (GAN)（生成對抗網路）</summary>
+由生成器和判別器組成的對抗性架構。生成器嘗試創建逼真的數據，判別器嘗試區分真實和生成的數據，二者相互競爭提升。應用於圖像生成、風格轉換等領域。
+</details>
+
+<details>
+<summary>Transformer</summary>
+一種基於自注意力機制的神經網路架構，最初為自然語言處理設計。不依賴循環結構，通過注意力機制直接建模長距離依賴關係，展現出卓越的並行處理能力。是現代大語言模型（如GPT、BERT）的基礎架構。
   - [Transformer-Decoder-only](Practice/Transformer-decoder-only/README.md)
+</details>
 
 </details>
 
