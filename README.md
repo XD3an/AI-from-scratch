@@ -165,6 +165,8 @@
 
 - [AutoAgent](https://github.com/HKUDS/AutoAgent)
 
+- [PocketFlow](https://github.com/The-Pocket/PocketFlow)
+
 ### Tools and Repositories
 
 #### AI Tools
