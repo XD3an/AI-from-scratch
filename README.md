@@ -147,6 +147,8 @@ RNN的一種變體，解決了普通RNN的長期依賴問題。通過引入門�
 
 - [Promptbase](https://promptbase.com/)
 
+- [Anthropic's prompt library](https://docs.anthropic.com/en/prompt-library/library)
+
 ##### Workflow
 
 - [n8n](https://github.com/n8n-io/n8n)：是一個開源的工作流自動化工具，可以用於構建和執行機器學習工作流。
