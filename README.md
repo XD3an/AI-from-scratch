@@ -281,6 +281,10 @@ RNN的一種變體，解決了普通RNN的長期依賴問題。通過引入門�
 
   - [Windsurf](https://codeium.com/windsurf)
 
+- AI Agent
+
+  - [manus](https://manus.im/)：是由中國初創公司 Monica 開發的自主人工智慧代理（AI Agent），於 2025 年 3 月 6 日正式推出。 
+
 - 其他實用工具
 
   - [Monica](https://monica.im/)： 是一個多功能AI助理，整合了多個頂尖AI模型，包括OpenAI的o3-mini、DeepSeek R1、GPT-4o、Claude 3.7和Gemini 2.0。它提供全方位的AI工具套件，包括聊天、摘要、寫作、搜索、翻譯、圖像生成等多種功能。
