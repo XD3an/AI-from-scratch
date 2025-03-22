@@ -281,6 +281,9 @@ RNN的一種變體，解決了普通RNN的長期依賴問題。通過引入門�
 
   - [Windsurf](https://codeium.com/windsurf)
 
+  - [Claude Code](https://github.com/anthropics/claude-code)
+    - [claude-code overview](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview)
+
 - AI Agent
 
   - [manus](https://manus.im/)：是由中國初創公司 Monica 開發的自主人工智慧代理（AI Agent），於 2025 年 3 月 6 日正式推出。 
