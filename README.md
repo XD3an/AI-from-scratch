@@ -201,6 +201,8 @@ RNN的一種變體，解決了普通RNN的長期依賴問題。通過引入門�
 
 - [PocketFlow](https://github.com/The-Pocket/PocketFlow)：PocketFlow 是一個僅有 100 行代碼的極簡主義 LLM 框架，以「讓代理構建代理」為核心理念。它旨在提供一個無膨脹、無依賴、無供應商鎖定的輕量級解決方案，同時保持足夠的表達能力來實現複雜的 AI 應用功能。
 
+- [bytedance/UI-TARS-desktop](https://github.com/bytedance/UI-TARS-desktop)
+
 ### Tools and Repositories
 
 #### AI Tools
