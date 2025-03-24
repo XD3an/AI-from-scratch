@@ -282,6 +282,7 @@ RNN的一種變體，解決了普通RNN的長期依賴問題。通過引入門�
       - [cursor.directory](https://cursor.directory/)
 
   - [Windsurf](https://codeium.com/windsurf)
+  - Flows = Agents + Copilots, Code flows smoother than your morning coffee: 超越了傳統編程方式、簡單的程式碼提示和自動化代理，創建了一個開發者和 AI 連續互動的環境。Flows 能夠理解開發上下文並適應任務變化，讓開發者能專注於創意思考，同時 AI 在背景中提供支持。
 
   - [Claude Code](https://github.com/anthropics/claude-code)
     - [claude-code overview](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview)
