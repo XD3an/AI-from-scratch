@@ -360,6 +360,10 @@ RNN的一種變體，解決了普通RNN的長期依賴問題。通過引入門�
 - [MCP server applications]()
   - [simple-calculator-mcp](Application/simple-calculator-mcp/README.md)：一個簡單的計算機 MCP 應用。
 
+## Libraries
+
+- [Windsurf rules](./.windsurfrule/)：Windsurf 的配置文件，用於定義編程環境的配置和規則。
+
 ## More News
 
 - [OpenAI News](https://openai.com/news/)
