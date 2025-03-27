@@ -203,6 +203,8 @@ RNN的一種變體，解決了普通RNN的長期依賴問題。通過引入門�
 
 - [bytedance/UI-TARS-desktop](https://github.com/bytedance/UI-TARS-desktop)
 
+- [OpenHands](https://github.com/All-Hands-AI/OpenHands)
+
 ### Tools and Repositories
 
 #### AI Tools
