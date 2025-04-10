@@ -205,6 +205,8 @@ RNN的一種變體，解決了普通RNN的長期依賴問題。通過引入門�
 
 - [OpenHands](https://github.com/All-Hands-AI/OpenHands)
 
+- [adk-python](https://github.com/google/adk-python)
+
 ### Tools and Repositories
 
 #### AI Tools
