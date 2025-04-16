@@ -163,6 +163,7 @@ RNN的一種變體，解決了普通RNN的長期依賴問題。通過引入門�
   - [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers)：是官方及社區建立的MCP servers 集合。
   - [PulseMCP](https://www.pulsemcp.com/)
   - [MCP.so](https://mcp.so/)
+  - [mcpify.ai](https://mcpify.ai/)
 
   - More: [XD3an/model-context-protocol-templates](https://github.com/XD3an/model-context-protocol-templates)
 
