@@ -324,6 +324,8 @@ RNN的一種變體，解決了普通RNN的長期依賴問題。通過引入門�
 
 - [awesome-assistants](https://github.com/awesome-assistants/awesome-assistants)
 
+- [NirDiamant/RAG_Techniques](https://github.com/NirDiamant/RAG_Techniques)
+
 ## Practices
 
 - [MNIST]()：MNIST 是一個手寫數字圖像數據集，包含 0 到 9 的 70,000 張 28x28 像素的灰度圖像。
