@@ -135,6 +135,8 @@ RNN的一種變體，解決了普通RNN的長期依賴問題。通過引入門�
 
 - [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM)：是 NVIDIA 開源的 TensorRT 工具箱，專門用於優化大型語言模型（LLM）的推理效能。它提供 Python API 和 C++ 元件，允許使用者有效地在 NVIDIA GPU 上建置和執行 TensorRT 推理引擎。
 
+- [BitNet](https://github.com/microsoft/BitNet)
+
 #### Interactions
 
 ##### Prompt
