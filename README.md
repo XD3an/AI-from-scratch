@@ -137,6 +137,8 @@ RNN的一種變體，解決了普通RNN的長期依賴問題。通過引入門�
 
 - [BitNet](https://github.com/microsoft/BitNet)
 
+- [llm](https://github.com/simonw/llm)
+
 #### Interactions
 
 ##### Prompt
